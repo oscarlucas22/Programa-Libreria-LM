@@ -9,4 +9,11 @@ with open("books.json") as fichero:
 def inicio():
     return render_template("inicio.html", datos = datos)
 
+@app.route('/libro/<isbn>')
+def libro(isbn):
+    for libro in datos:
+        if libro.get("isbn") == isbn:
+            return render_template("libro.html", libro = libro)
+    abort(404)
+
 app.run("0.0.0.0",5000,debug=True)

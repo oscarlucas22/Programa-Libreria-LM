@@ -15,4 +15,12 @@
             <p>Descripcion corta = {{libro.shortDescription}}</p>
         {% endif %}
         <br />
+    <h3>Autores</h3>
+        {% for autores in libro.authors %}
+            {% if autores %}
+                <ul>
+                    <li>{{autores}}</li>
+                </ul>
+            {% endif %}
+        {% endfor %}
 {% endblock %}

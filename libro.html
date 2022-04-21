@@ -23,5 +23,13 @@
                 </ul>
             {% endif %}
         {% endfor %}
+    <h3>Categorias</h3>
+        {% for categoria in libro.categories %}  
+            {% if categoria %}
+                <ul>
+                    <li><a href="/categorias/{{categoria}}">{{categoria}}</a></li>
+                </ul>
+            {% endif %}
+        {% endfor %}
     {% endif %}
 {% endblock %}

@@ -4,5 +4,9 @@ import json
 
 with open("books.json") as fichero:
     datos = json.load(fichero)
+    
+@app.route('/')
+def inicio():
+    return render_template("inicio.html", datos = datos)
 
 app.run("0.0.0.0",5000,debug=True)

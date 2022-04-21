@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Biblioteca</title>
+{% endblock %}
+{% block contenido %}
+<h1>Óscar Lucas Leo</h1>
+<ul>
+    {% for titulo in datos %}
+        <li><a href="/libro/{{titulo.isbn}}">{{titulo.title}}</a></li>
+    {% endfor -%}
+</ul>
+{% endblock %}

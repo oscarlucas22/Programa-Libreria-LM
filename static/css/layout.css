@@ -1,0 +1,161 @@
+@charset "utf-8";
+/*
+Template Name: Nekmit
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("framework.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row0, .row0 a{}
+.row1, .row1 a{}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5, .row5 a{}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+.padtop{padding:80px 0 0 0;}
+ 
+#header{padding:0 30px;}
+
+#header #logo{margin:22px 0 0 0;}
+#header #logo h1{margin:0; padding:0; font-size:2rem; font-variant:small-caps;}
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:30px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+h1{color:#66ff00} 
+body{color:#000000; background-color:#ffffff;}
+a{color:#0059ff;}
+a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#000000;}
+label span{color:#000000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#000000 !important;}
+
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay.light{color:#000000;}
+.overlay.light::after{background-color:rgba(0, 0, 0, 0.7);}
+
+.btn, .btn.inverse:hover{color:#000000; background-color:hsl(56, 94%, 50%); border-color:#000000;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+.imgover:hover::before{background-color:rgba(0, 0, 0, 0.3);/* #0AC6FC */}
+.imgover, .imgover:hover::after{color:#000000;}
+
+
+/* Rows */
+.row0, .row0 a{color:#000000; background-color:#ffe500;}
+.row1{color:#000000; background-color:#ffe500;}
+.row2{color:#000000; background-color:#ffe500;}
+.row3{color:#000000; background-color:#ffe500;}
+.row4{color:#000000; background-color:#ffe500;}
+.row5, .row5 a{color:#000000; background-color:#ffe500;}
+
+
+/* Header */
+#header{color:#000000; background-color:#ffe500;}
+#header #logo a{color:inherit;}
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1140px){
+	.hoc{max-width:1140px;}
+}
+
+@media screen and (min-width:978px) and (max-width:1140px){
+	.hoc{max-width:95%;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:978px){
+	.hoc{max-width:90%;}
+
+	#header{padding:30px;}
+	#header #logo{margin-top:0;}
+
+	#mainav{}
+	#mainav ul{display:none;}
+	#mainav form{display:block; margin-top:2px;}
+
+	#breadcrumb{}
+
+	.container{}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0;}
+	.last, .group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+
+	#header{text-align:center;}
+	#header #logo{margin:0 0 15px 0;}
+
+	#pageintro article{max-width:none;}
+	#pageintro .heading{margin-bottom:20px; font-size:2.5rem;}
+
+	.sectiontitle{max-width:none;}
+	.sd-third > li, .grid-3{max-width:348px;}/* Restrict the width to the one_third grid element in smaller devices */
+	.grid-3{margin:0 auto;}
+	.grid-3 > li:nth-last-child(-n+3){margin-bottom:50px;}
+	.grid-3 > li:last-child{margin-bottom:0;}
+
+	#latest > li{margin:0 auto 50px;}
+}
+
+@media screen and (max-width:450px){
+	#points{padding:30px;}
+	#points li{display:block; float:none; width:100%; margin-left:0;}
+	#points li:nth-last-child(2){margin-bottom:20px;}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.6rem;}
+	.font-x3{font-size:1.8rem;}
+}
